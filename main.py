@@ -34,9 +34,6 @@ def hello_view(name: str = None):
     name = name.strip()     # убираем пробелы слева и справа
     if not name:
         name = "World"
-    # names = request.args.getlist("name")
-    # print(request.args)
-    # return {"message": "Hello!", "name": name, "names": names}
     return {"message": f"Hello {name}!"}
 
 
